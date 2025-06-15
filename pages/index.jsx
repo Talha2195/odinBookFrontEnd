@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { guestLogin } from "../../backend/apiCalls/handleGuestLogin"
+import { guestLogin } from "../apiCalls/handleGuestLogin"
 
 export default function LoginPage() {
   const [error, setError] = useState(null)
