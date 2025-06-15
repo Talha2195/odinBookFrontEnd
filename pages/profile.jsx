@@ -90,7 +90,7 @@ export default function Profile() {
           setLikedPosts(likedPosts)
           setLikedComments(likedComments)
         } else {
-          router.push("/loginPage")
+          router.push("/index")
         }
       } catch (error) {
         console.error("Error loading profile:", error)
