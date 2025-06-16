@@ -24,7 +24,7 @@ export default function LoginPage() {
   const handleGitHubAuth = async () => {
     setSuccess("Redirecting to GitHub login...")
     setTimeout(() => {
-      window.location.href = "http://localhost:5000/auth/github"
+      window.location.href = "https://odinbookbackend.onrender.com/auth/github"
     }, 2000)
   }
 
