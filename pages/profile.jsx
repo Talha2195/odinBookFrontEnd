@@ -161,7 +161,7 @@ export default function Profile() {
     try {
       const result = await logoutUser()
       if (result.success) {
-        window.location.href = "/loginPage"
+        window.location.href = "/index"
       } else {
         console.error("Error:", result.message)
       }
