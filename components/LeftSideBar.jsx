@@ -21,6 +21,7 @@ const LeftSidebar = ({
   handleIndexClick,
   handleHomeClick,
 }) => {
+  console.log(user)
   return (
     <div
       className="sticky top-0 h-screen w-64 bg-white p-4 shadow-lg"
