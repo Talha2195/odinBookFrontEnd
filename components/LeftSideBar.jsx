@@ -21,7 +21,6 @@ const LeftSidebar = ({
   handleIndexClick,
   handleHomeClick,
 }) => {
-  console.log(user)
   return (
     <div
       className="sticky top-0 h-screen w-64 bg-white p-4 shadow-lg"
@@ -39,9 +38,7 @@ const LeftSidebar = ({
             <img src="" alt="" className="w-full h-full object-cover" />
           )}
         </div>
-        {user && user.user && (
-          <p className="text-gray-700 font-bold">{user.username}</p>
-        )}
+        {user && <p className="text-gray-700 font-bold">{user.username}</p>}
       </div>
       <nav className="space-y-4">
         <a
