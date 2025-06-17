@@ -55,7 +55,6 @@ export default function Profile() {
     const authenticate = async () => {
       try {
         const result = await loadProfilePage()
-        console.log("Profile data:", result)
         if (result.success) {
           const userData = result.user
           setUser(userData.user.user)

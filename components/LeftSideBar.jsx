@@ -39,7 +39,7 @@ const LeftSidebar = ({
           )}
         </div>
         {user && user.user && (
-          <p className="text-gray-700 font-bold">{user.user.username}</p>
+          <p className="text-gray-700 font-bold">{user.username}</p>
         )}
       </div>
       <nav className="space-y-4">
