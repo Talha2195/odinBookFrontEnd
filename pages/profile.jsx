@@ -55,13 +55,14 @@ export default function Profile() {
     const authenticate = async () => {
       try {
         const result = await loadProfilePage()
+        console.log(result)
         if (result.success) {
           const userData = result.user
           setUser(userData.user.user)
           setFriendRequests(userData.friendRequests || [])
           setUserPosts(userData.posts || [])
           if (userData && userData.user) {
-            setUserProfileImage(userData.user.user.profilePicture || null)
+            setUserProfileImage(userData.user.profilePicture || null)
           } else {
             console.error("Error: userData.user is undefined")
           }
