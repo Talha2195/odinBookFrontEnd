@@ -55,10 +55,9 @@ export default function Profile() {
     const authenticate = async () => {
       try {
         const result = await loadProfilePage()
-        console.log(result)
         if (result.success) {
           const userData = result.user
-          setUser(userData.user.user)
+          setUser(userData.user)
           setFriendRequests(userData.friendRequests || [])
           setUserPosts(userData.posts || [])
           if (userData && userData.user) {
